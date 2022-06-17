@@ -42,7 +42,7 @@
     font-size: 12px;
     color: rgba(3, 114, 219, 0.76);
     justify-content: space-around;
-    max-width: 200px;
+    max-width: 400px;
   }
 
   button {
@@ -51,5 +51,29 @@
     cursor: pointer;
     border: 0;
     top: 21px;
+  }
+
+  .ratingContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    align-items: center;
+
+    button {
+      position: static;
+      background-color: unset;
+      font-size: 18px;
+      border-radius: 100px;
+      width: 20px;
+      height: 20px;
+
+      &:hover {
+        background-color: rgb(179, 255, 0);
+      }
+    }
+  }
+
+  .closedComment {
+    cursor: pointer;
   }
 }

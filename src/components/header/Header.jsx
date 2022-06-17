@@ -31,6 +31,7 @@ const Header = ({ users }) => {
     if (findUser && findEmail) {
       setLoginValidation(false);
       localStorage.setItem("user", JSON.stringify(findEmail));
+      setOpen(false);
     } else {
       setLoginValidation(true);
     }

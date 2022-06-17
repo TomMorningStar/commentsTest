@@ -11,9 +11,12 @@ const commentsSlice = createSlice({
     setItems(state, action) {
       state.items = [...state.items, action.payload];
     },
+    removeComment(state, action) {
+      state.items = state.items.filter((obj) => obj.time !== action.payload);
+    },
   },
 });
 
-export const { setItems } = commentsSlice.actions;
+export const { setItems, removeComment } = commentsSlice.actions;
 
 export default commentsSlice.reducer;
