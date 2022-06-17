@@ -20,6 +20,10 @@ const App = () => {
   const [value, setValue] = React.useState("");
 
   const addComment = () => {
+    if (!user) {
+      alert("Сначала войдите");
+    }
+
     if (value) {
       dispatch(
         setItems({
@@ -27,7 +31,7 @@ const App = () => {
           login: user.login,
           email: user.email,
           avatar: user.avatar,
-          time: time.getSeconds(),
+          time: new Date(),
         })
       );
     }

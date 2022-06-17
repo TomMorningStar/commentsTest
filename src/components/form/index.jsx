@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Form.module.scss";
 
-const Form = ({ value, onChangeInput, setValue, addComment }) => {
+const Form = ({ value, onChangeInput, addComment }) => {
   return (
     <div className={styles.form}>
       <input
