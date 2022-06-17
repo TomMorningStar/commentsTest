@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  input,
+  button {
+    display: block;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #343434;
+    color: #444;
+  }
+  input {
+    width: 80%;
+    outline: none;
+    border-right: none;
+  }
+  button {
+    width: 20%;
+    cursor: pointer;
+    background-color: #d3d4da;
+    font-weight: 600;
+
+    &:active {
+      background-color: #9d9d9d;
+    }
+  }
+}

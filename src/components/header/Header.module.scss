@@ -1,0 +1,61 @@
+.root {
+  background-image: url(https://img08.rl0.ru/afisha/e904x508p115x0f1818x1039q85i/s1.afisha.ru/mediastorage/be/b4/be0fba976de54945984be5fdb4be.jpg);
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+
+  button {
+    padding: 7px 14px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .windowForm {
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    background: rgb(112, 112, 112);
+    background: linear-gradient(
+      58deg,
+      rgba(112, 112, 112, 1) 27%,
+      rgba(112, 112, 112, 1) 48%,
+      rgba(34, 34, 34, 1) 87%
+    );
+    border-radius: 15px;
+  }
+
+  .selectPhoto {
+    font-size: 10px;
+  }
+
+  .form {
+    input {
+      width: 100%;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      outline: none;
+    }
+  }
+
+  .registrButton {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .login {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+}

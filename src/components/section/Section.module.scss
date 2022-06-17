@@ -1,0 +1,55 @@
+.rounded {
+  list-style: none;
+  font: 14px "Trebuchet MS", "Lucida Sans";
+  padding: 0;
+
+  li {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 3em;
+    margin: 0.5em 0;
+    background: #d3d4da;
+    color: #444;
+    text-decoration: none;
+    border-radius: 0.3em;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      img {
+        transform: rotate(360deg);
+      }
+      img {
+        transform: rotate(360deg);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+
+      margin-top: -20px;
+      height: 40px;
+      width: 40px;
+      border: 3px solid #d3d4da;
+      border-radius: 2em;
+      left: 0;
+      transition: all 0.4s ease-out;
+    }
+  }
+
+  .userName {
+    display: flex;
+    font-size: 12px;
+    color: rgba(3, 114, 219, 0.76);
+    justify-content: space-around;
+    max-width: 200px;
+  }
+
+  button {
+    position: absolute;
+    right: 42px;
+    cursor: pointer;
+    border: 0;
+    top: 21px;
+  }
+}
