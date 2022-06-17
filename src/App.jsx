@@ -10,6 +10,8 @@ import Header from "./components/header/Header";
 const App = () => {
   const dispatch = useDispatch();
 
+  const time = new Date();
+
   const items = useSelector((state) => state.comments.items);
   const users = useSelector((state) => state.users.users);
 
@@ -25,10 +27,11 @@ const App = () => {
           login: user.login,
           email: user.email,
           avatar: user.avatar,
-          lolka: "asdasdasd",
+          time: time.getSeconds(),
         })
       );
     }
+
     setValue("");
   };
 
@@ -39,7 +42,7 @@ const App = () => {
   return (
     <div className="app">
       <Header users={users} />
-      <Section items={items} />
+      <Section items={items} user={user} />
       <Form
         onChangeInput={onChangeInput}
         addComment={addComment}
