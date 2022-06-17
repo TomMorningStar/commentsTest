@@ -9,7 +9,6 @@ const commentsSlice = createSlice({
   initialState,
   reducers: {
     setItems(state, action) {
-      console.log(action.payload);
       state.items = [...state.items, action.payload];
     },
   },
