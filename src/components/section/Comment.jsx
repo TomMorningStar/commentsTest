@@ -20,10 +20,13 @@ const Comment = ({ obj, i, user }) => {
     }, 1000);
 
     const minuteTimer = window.setInterval(() => {
-      window.clearInterval(timer);
       setMinutes((prevTime) => prevTime + 1);
       setTimeInfo("minutes");
     }, 60000);
+
+    setTimeout(() => {
+      window.clearInterval(timer);
+    }, 61000);
 
     const hourTimer = window.setInterval(() => {
       window.clearInterval(minuteTimer);
